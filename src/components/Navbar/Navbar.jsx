@@ -1,11 +1,11 @@
-import React from "react";
-import Logo from "../../assets/logo.png";
-import { IoMdSearch } from "react-icons/io";
-import { FaCartShopping } from "react-icons/fa6";
-import { FaCaretDown } from "react-icons/fa";
-import DarkMode from "./DarkMode";
+ import React from "react";
+ import Logo from "../../assets/logo.png";
+ import { IoMdSearch } from "react-icons/io";
+ import { FaCartShopping } from "react-icons/fa6";
+ import { FaCaretDown } from "react-icons/fa";
+ import DarkMode from "./DarkMode";
 
-const Menu = [
+ const Menu = [
   {
     id: 1,
     name: "Home",
@@ -31,9 +31,9 @@ const Menu = [
     name: "Electronics",
     link: "/Electronics",
   },
-];
+ ];
 
-const DropdownLinks = [
+ const DropdownLinks = [
   {
     id: 1,
     name: "Trending Products",
@@ -49,9 +49,9 @@ const DropdownLinks = [
     name: "Top Rated",
     link: "/Top Rated",
   },
-];
+ ];
 
-const Navbar = ({ handleOrderPopup }) => {
+ const Navbar = ({ handleOrderPopup }) => {
   return (
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
       {/* upper Navbar */}
@@ -133,6 +133,7 @@ const Navbar = ({ handleOrderPopup }) => {
       </div>
     </div>
   );
-};
+ };
+ export default Navbar;
 
-export default Navbar;
+

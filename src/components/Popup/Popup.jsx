@@ -1,7 +1,6 @@
-import React from "react";
-import { IoCloseOutline } from "react-icons/io5";
-
-const Popup = ({ orderPopup, setOrderPopup }) => {
+ import React from "react";
+ import { IoCloseOutline } from "react-icons/io5";
+ const Popup = ({ orderPopup, setOrderPopup }) => {
   return (
     <>
       {orderPopup && (
@@ -14,10 +13,7 @@ const Popup = ({ orderPopup, setOrderPopup }) => {
                   <h1>Order Now</h1>
                 </div>
                 <div>
-                  <IoCloseOutline
-                    className="text-2xl cursor-pointer "
-                    onClick={() => setOrderPopup(false)}
-                  />
+                  <IoCloseOutline className="text-2xl cursor-pointer "onClick={() => setOrderPopup(false)}/>
                 </div>
               </div>
               {/* form section */}
@@ -49,6 +45,5 @@ const Popup = ({ orderPopup, setOrderPopup }) => {
       )}
     </>
   );
-};
-
-export default Popup;
+ };
+ export default Popup;
